@@ -1,71 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Alura challenge</title>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Alura challenge</title>
 
-    <link rel="stylesheet" href="./style.css" />
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
 
-    <!-- icons -->
-    <script src="https://kit.fontawesome.com/cac1a37b87.js" crossorigin="anonymous"></script>
+		<!-- icons -->
+		<script
+			src="https://kit.fontawesome.com/cac1a37b87.js"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- googlefont -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<!-- googlefont -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+			rel="stylesheet"
+		/>
 
+		<!-- favicon   -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./icons/favicon-16x16.png"
+		/>
+		<link
+			rel="manifest"
+			href="./icons/site.webmanifest"
+		/>
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="encoder">
+					<!-- header -->
+					<div class="header">
+						<h1>Challenge encriptador Alura</h1>
+					</div>
 
-    <!-- favicon   -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
-    <link rel="manifest" href="./icons/site.webmanifest">
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <div class="encoder">
+					<!-- Select -->
+					<div class="select">
+						<button
+							id="encrypt_select"
+							class="s_enabled"
+						>
+							encriptar
+						</button>
+						<button
+							id="decrypt_select"
+							class="s_disabled"
+						>
+							desencriptar
+						</button>
+					</div>
 
-          <!-- header -->
-          <div class="header">
-            <h1>Challenge encriptador Alura</h1>
-          </div>
+					<!-- text area -->
+					<div class="text">
+						<div>
+							<textarea
+								class="in"
+								id="in"
+								cols="30"
+								rows="10"
+								placeholder="inserte texto aqui"
+							></textarea>
+						</div>
+						<div>
+							<label
+								id="label"
+								for=""
+								>click para copiar</label
+							>
+							<textarea
+								class="out"
+								id="out"
+								cols="30"
+								rows="10"
+								readonly
+								placeholder=""
+							></textarea>
+						</div>
+					</div>
 
-          <!-- Select -->
-          <div class="select">
-            <button id="encrypt_select" class="s_enabled">encriptar</button>
-            <button id="decrypt_select" class="s_disabled">desencriptar</button>
-          </div>
-        
-          <!-- text area -->
-          <div class="text">
-            <div>
-              <textarea class="in" id="in" cols="30" rows="10" placeholder="inserte texto aqui"></textarea>
-            </div>
-            <div>
-              <label id="label" for="">click para copiar</label>
-              <textarea class="out" id="out" cols="30" rows="10" readonly placeholder=""></textarea>
-            </div>
-          </div>
+					<!-- Buttons -->
+					<div class="buttons">
+						<button
+							type="submit"
+							class="encrypt_button"
+							onclick="submit()"
+						>
+							Enter
+						</button>
+					</div>
+				</div>
 
-          <!-- Buttons -->
-          <div class="buttons">
-            <button type="submit" class="encrypt_button" onclick="submit()">Enter</button>
-          </div>
-
-        </div>
-
-        <!-- footer -->
-        <div class="footer">
-          <p><i class="fa-sharp fa-solid fa-circle-exclamation"></i> Solo minusculas y no letras con acentos ni caracteres especiales.</p>
-          <p>Copyright© 2023 Cristian Vargas Alarcon. Todos los derechos reservados. <a href="https://github.com/CVrgas">github</a></p>
-        </div>
-
-      </div>
-    </main>
-    <script src="./script.js"></script>
-  </body>
+				<!-- footer -->
+				<div class="footer">
+					<p>
+						<i class="fa-sharp fa-solid fa-circle-exclamation"></i> Solo
+						minusculas y no letras con acentos ni caracteres especiales.
+					</p>
+					<p>
+						Copyright© 2023 Cristian Vargas Alarcon. Todos los derechos
+						reservados.
+						<a
+							href="https://github.com/CVrgas"
+							target="_blank"
+							>github</a
+						>
+					</p>
+				</div>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
 </html>

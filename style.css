@@ -150,6 +150,14 @@ body {
 }
 .footer p {
 	color: var(--light-shades);
+	height: 50px;
+}
+.footer a {
+	margin: auto;
+	margin-left: 25px;
+}
+.footer img {
+	height: 100%;
 }
 .fa-circle-exclamation {
 	margin-right: 10px;

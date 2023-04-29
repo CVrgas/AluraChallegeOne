@@ -28,8 +28,6 @@ body {
 	backdrop-filter: blur(20px);
 	border-radius: 10px;
 	box-shadow: 27px 27px 61px #32579b, -27px -27px 61px #5695ff;
-	scale: 0;
-	opacity: 0;
 }
 .header {
 	width: 100%;

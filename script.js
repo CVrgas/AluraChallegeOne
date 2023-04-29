@@ -12,9 +12,7 @@ label.addEventListener("click", () => {
 		label.classList.remove("success");
 	}, 1000);
 });
-// swither.addEventListener("change", () =>{
-//     _switch()
-// })
+
 toEncrypt.addEventListener("click", () => {
 	//enable encrypt
 	toEncrypt.classList.replace("s_disabled", "s_enabled");
@@ -86,4 +84,3 @@ function decrypt(text) {
 		.replaceAll("ober", "o")
 		.replaceAll("ufat", "u");
 }
-function x() {}

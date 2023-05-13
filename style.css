@@ -64,22 +64,6 @@ body {
 	height: 50%;
 	width: 50%;
 }
-.text label {
-	position: absolute;
-	width: 100%;
-	height: inherit;
-	text-align: center;
-	padding-top: 35%;
-	color: transparent;
-	cursor: pointer;
-	font-size: 30px;
-	z-index: 999;
-}
-.text label:hover {
-	color: rgba(0, 0, 0, 0.459);
-	background-color: rgba(0, 0, 0, 0.02);
-	border-radius: 15px;
-}
 
 .text textarea {
 	resize: none;
@@ -157,10 +141,28 @@ body {
 	margin-left: 25px;
 }
 .footer img {
-	height: 100%;
+	height: 60%;
 }
 .fa-circle-exclamation {
 	margin-right: 10px;
+}
+#label {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+#label h1 {
+	margin: auto;
+	opacity: 0;
+}
+#label:hover h1 {
+	opacity: 1;
+	color: white;
 }
 .success {
 	animation: 0.5s success;

@@ -1,12 +1,11 @@
 const textIn = document.getElementById("in");
 const textOut = document.getElementById("out");
-// const label = document.getElementById("label");
 const toEncrypt = document.getElementById("encrypt_select");
 const toDecrypt = document.getElementById("decrypt_select");
 
-label.addEventListener("click", () => {
+textOut.addEventListener("click", () => {
 	navigator.clipboard.writeText(textOut.value);
-	label.classList.add("success");
+	textOut.classList.add("success");
 	setTimeout(() => {
 		label.classList.remove("success");
 	}, 1000);
@@ -55,6 +54,7 @@ function validate(text) {
 	setTimeout(() => {
 		textOut.classList.remove("error");
 	}, 2000);
+
 	return false;
 }
 function encrypt(text) {
